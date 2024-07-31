@@ -1,0 +1,1023 @@
+[
+    {
+        "id": "0",
+        "name": "Acte suicidaire",
+        "case_definition": "Tout acte délibéré réalisé dans l'intention de se donner la mort : geste de violence sur sa propre personne (phlébotomie, précipitation, pendaison, arme à feu, intoxication au gaz ...) ou ingestion d'une substance toxique ou de médicaments à une dose supérieure à la dose reconnue comme thérapeutique. Cet acte doit être inhabituel : les conduites addictives (alcool, drogues...) sont donc exclues ainsi que les automutilations répétées et les refus de s'alimenter.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 1999,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-0-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 1999,
+                    "end": 2023
+                }
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Rougeole",
+        "case_definition": "Eruption généralisée d'une durée supérieure à 3 jours - les cas qui se présentent en deçà ne sont pas pris en compte -, accompagnée d'une fièvre supérieure à 38,5°C et d'une toux, d'un coryza ou d'une conjonctivite.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 1985,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-2-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 1985,
+                    "end": 2008
+                }
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Syndromes Grippaux",
+        "case_definition": "Fièvre supérieure à 39°C, d'apparition brutale, accompagnée de myalgies et de signes respiratoires.",
+        "geo": [
+            "PAY",
+            "REG",
+            "RDD"
+        ],
+        "periods": [
+            {
+                "frequency": "week",
+                "start": 198444,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-3-PAY-ds2",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs_iqvia",
+                "time_scale": "week",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "csv",
+                    "json"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 201601,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-3-RDD-ds2",
+                "geo": "RDD",
+                "geo_nuts": "NUTS-1",
+                "datasource": "rs_iqvia",
+                "time_scale": "week",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "csv",
+                    "json"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 201601,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-3-REG-ds2",
+                "geo": "REG",
+                "geo_nuts": "NUTS-2",
+                "datasource": "rs_iqvia",
+                "time_scale": "week",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "csv",
+                    "json"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 201601,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-3-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 198444,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-3-REG",
+                "geo": "REG",
+                "geo_nuts": "NUTS-2",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 198444,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-3-RDD",
+                "geo": "RDD",
+                "geo_nuts": "NUTS-1",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 198444,
+                    "end": 202428
+                }
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Urétrite masculine",
+        "case_definition": "Présence d'une dysurie d'apparition récente et/ou d'un écoulement urétral purulent, mucopurulent ou mucoïde récent.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 1985,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-4-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 1985,
+                    "end": 2019
+                }
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Oreillons",
+        "case_definition": "Cas répondant à l'une des situations suivantes :\n\r\n* Tuméfaction parotidienne uni ou bilatérale, douloureuse, récente, isolée ou associée à une atteinte testiculaire/ovarienne, pancréatique, méningée ou encéphalique.\n\r\n* En l'absence de parotidite : association d'une orchite/ovarite, d'une pancréatite, d'une méningite ou d'une encéphalite et d'une séroconversion ourlienne.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 1986,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-5-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 1986,
+                    "end": 2023
+                }
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Diarrhée aiguë",
+        "case_definition": "Au moins 3 selles liquides ou molles par jour datant de moins de 14 jours motivant la consultation.",
+        "geo": [
+            "PAY",
+            "REG",
+            "RDD"
+        ],
+        "periods": [
+            {
+                "frequency": "week",
+                "start": 199049,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-6-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 199049,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-6-REG",
+                "geo": "REG",
+                "geo_nuts": "NUTS-2",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 199049,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-6-RDD",
+                "geo": "RDD",
+                "geo_nuts": "NUTS-1",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 199049,
+                    "end": 202428
+                }
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Varicelle",
+        "case_definition": "Eruption typique (érythémato-vésiculeuse durant 3-4 jours, prurigineuse, avec phase de dessiccation) débutant de façon brutale, avec fièvre modérée (37,5°C - 38°C).",
+        "geo": [
+            "PAY",
+            "REG",
+            "RDD"
+        ],
+        "periods": [
+            {
+                "frequency": "week",
+                "start": 199049,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-7-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 199049,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-7-REG",
+                "geo": "REG",
+                "geo_nuts": "NUTS-2",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 199049,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-7-RDD",
+                "geo": "RDD",
+                "geo_nuts": "NUTS-1",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 199049,
+                    "end": 202428
+                }
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Test VIH",
+        "case_definition": "Dépistage HIV demandé.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 1987,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-8-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 1987,
+                    "end": 2002
+                }
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Hospitalisation",
+        "case_definition": "Toute hospitalisation décidée à l'issue d'une consultation ou d'une visite.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 1998,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-9-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 1998,
+                    "end": 2011
+                }
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Crises d'asthme",
+        "case_definition": "* Avant 3 ans = épisode de sibilants (bronchiolite incluse), uniquement à partir du 3ème épisode.\n * Après 3 ans = crise d'asthme (dyspnée expiratoire aiguë avec sibilants et/ou toux), exclusion des poussées de Broncho-Pneumopathie Chronique Obstructive et d'insuffisance cardiaque gauche.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2003,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-10-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2003,
+                    "end": 2011
+                }
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Hépatite A aigüe",
+        "case_definition": "Taux de transaminases au moins 2 fois supérieur à la valeur normale du laboratoire ou par un ictère ou par une asthénie, d'apparition récente en l'absence d'autre cause d'hépatite. Une hépatite virale A (VHA) est définie par la présence d'anticorps IgM anti VHA.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2000,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-11-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2000,
+                    "end": 2008
+                }
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Hépatite B aigüe",
+        "case_definition": "Taux de transaminases au moins 2 fois supérieur à la valeur normale du laboratoire ou par un ictère ou par une asthénie, d'apparition récente en l'absence d'autre cause d'hépatite. Une hépatite B (VHB) est définie par la présence d'anticorps IgM anti-HBc ou d'antigènes HBs.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2000,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-12-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2000,
+                    "end": 2008
+                }
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Hépatite C",
+        "case_definition": "Présence d'anticorps Anti-VHC.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2000,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-13-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2000,
+                    "end": 2008
+                }
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Zona",
+        "case_definition": "Première consultation pour un zona en phase aiguë défini par une éruption aiguë erythémato-vésiculeuse douloureuse au niveau d'un territoire métamérique (territoire nerveux radiculaire), accompagnée éventuellement de nombreuses vésicules à distance du métamère concerné (zona disséminé).\r\nCritères d'exclusion :  doûleurs post-zostériennes, visite subséquente pour un même épisode.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2005,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-14-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2005,
+                    "end": 2023
+                }
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "name": "Sérologies VHC prescrites",
+        "case_definition": "Dépistage d'hépatite C demandé.",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2000,
+                "end": 0
+            }
+        ],
+        "ongoing": false,
+        "datasets": [
+            {
+                "id": "inc-15-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2000,
+                    "end": 2008
+                }
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "name": "Maladie de Lyme",
+        "case_definition": "Cas répondant à l'une des situations suivantes :\n\r\n* Diagnostic clinique : présence d'un érythème migrant.\n\r\n* Diagnostic clinique avec confirmation sérologique :   présence de manifestations neurologiques, articulaires, cutanées ou cardiaques évocatrices de maladie de Lyme chez un patient ayant une sérologie positive (test Elisa positif confirmé par un test Western-Blot).",
+        "geo": [
+            "PAY",
+            "REG"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2009,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-18-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2009,
+                    "end": 2023
+                }
+            },
+            {
+                "id": "inc-18-REG",
+                "geo": "REG",
+                "geo_nuts": "NUTS-2",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2009,
+                    "end": 2023
+                }
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "name": "Coqueluche",
+        "case_definition": "Cas confirmés biologiquement : patient suspect de coqueluche avec une PCR positive (ou une culture positive) ou cas confirmés épidémiologiquement : patient suspect de coqueluche dont l'un de ses contacts dans les 3 semaines avant le début de sa toux a été confirmé biologiquement par PCR ou culture (contaminateur potentiel du cas épidémiologique) ou si une personne en contact avec lui alors qu'il était en période de contagiosité a présenté des signes suspects de coqueluche ayant été confirmés au laboratoire par PCR ou culture (cas secondaire du cas épidémiologique).",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2017,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-20-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2017,
+                    "end": 2023
+                }
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "name": "IST bactérienne",
+        "case_definition": "Patient vu en consultation pour lequel le résultat d'un prélèvement microbiologique confirme au moins une des trois IST suivantes, que ce prélèvement ait été effectué chez un patient symptomatique ou asymptomatique, et que l'infection soit génitale ou extra-génitale : \r\n\r\nInfection à Chlamydia trachomatis : PCR positive\r\nInfection à gonocoque : PCR positive et/ou culture positive\r\nSyphilis active : positivité conjointe d'un test tréponémique (ELISA ou EIA ou CIA ou TPHA, ...) ET d'un test non tréponémique (VDRL ou RPR).\r\n",
+        "geo": [
+            "PAY"
+        ],
+        "periods": [
+            {
+                "frequency": "year",
+                "start": 2020,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-24-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "year",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "year",
+                    "start": 2020,
+                    "end": 2023
+                }
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "name": "Infection respiratoire aiguë (IRA)",
+        "case_definition": "Tout patient consultant (ou téléconsultant) pour une infection respiratoire aiguë (IRA), définie par l'apparition brutale de fièvre (ou sensation de fièvre) et de signes respiratoires",
+        "geo": [
+            "PAY",
+            "REG",
+            "RDD"
+        ],
+        "periods": [
+            {
+                "frequency": "week",
+                "start": 202012,
+                "end": 0
+            }
+        ],
+        "ongoing": true,
+        "datasets": [
+            {
+                "id": "inc-25-PAY-ds2",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs_iqvia",
+                "time_scale": "week",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "csv",
+                    "json"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 202016,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-25-RDD-ds2",
+                "geo": "RDD",
+                "geo_nuts": "NUTS-1",
+                "datasource": "rs_iqvia",
+                "time_scale": "week",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "csv",
+                    "json"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 202016,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-25-REG-ds2",
+                "geo": "REG",
+                "geo_nuts": "NUTS-2",
+                "datasource": "rs_iqvia",
+                "time_scale": "week",
+                "spans": [
+                    "all"
+                ],
+                "formats": [
+                    "csv",
+                    "json"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 202016,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-25-PAY",
+                "geo": "PAY",
+                "geo_nuts": "NUTS-0",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 202012,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-25-REG",
+                "geo": "REG",
+                "geo_nuts": "NUTS-2",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 202012,
+                    "end": 202428
+                }
+            },
+            {
+                "id": "inc-25-RDD",
+                "geo": "RDD",
+                "geo_nuts": "NUTS-1",
+                "datasource": "rs",
+                "time_scale": "week",
+                "spans": [
+                    "all",
+                    "short",
+                    "last"
+                ],
+                "formats": [
+                    "json",
+                    "csv"
+                ],
+                "time_period": {
+                    "frequency": "week",
+                    "start": 202012,
+                    "end": 202428
+                }
+            }
+        ]
+    }
+]

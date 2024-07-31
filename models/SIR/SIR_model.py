@@ -1,12 +1,12 @@
-import numpy as np
-from sentinel_api import SentinelClient
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 from scipy.integrate import odeint
 from scipy.optimize import curve_fit
-from models.common import split_years, compute_rrmse
-from scipy.interpolate import interp1d
-import pandas as pd
+
 from info import path
+from models.common import split_years, compute_rrmse
+from sentinel_api import SentinelClient
 
 
 def eq_system(y, t, beta, gamma, t0):
@@ -18,8 +18,9 @@ def eq_system(y, t, beta, gamma, t0):
     dr = gamma * i
     return [ds, di, dr]
 
+
 def sir_equation(x, beta, gamma, t0, n):
-    res = odeint(eq_system, y0 = [100000, 10, 0], t=x, args = (beta, gamma, t0))
+    res = odeint(eq_system, y0=[100000, 10, 0], t=x, args=(beta, gamma, t0))
     i = res.T[1]
     i *= n / i.max()
     return i
@@ -68,7 +69,7 @@ if __name__ == "__main__":
     results = np.array(results)
     fig, ax = plt.subplots(2, 2)
     for i in range(4):
-        pos = (i//2, i%2)
+        pos = (i // 2, i % 2)
         ax[pos].scatter(df_sub.keys(), results.T[i])
     fig.tight_layout()
 

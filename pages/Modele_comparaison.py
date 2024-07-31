@@ -7,9 +7,9 @@ import streamlit as st
 
 from common import get_data_from_api, labels
 from models.SIR.SIR_model import adjust_single_sir, sir_equation
+from models.common import compute_rmse
 from models.gaussian_fit.gaussian_fits import adjust_single_gaussian, gaussian_equation
 from sentinel_api import SentinelClient
-from models.common import compute_rmse
 
 # charge le client
 client = SentinelClient()
@@ -18,14 +18,14 @@ diseases_list_with_regions = client.diseases_list_with_regions
 disease = st.selectbox("Sélectionner une pathologie", diseases_list_with_regions)
 df = get_data_from_api(client, disease, geo="PAY")
 
-year = st.slider(label='Année', min_value=df["date"].min().year, max_value=df["date"].max().year, value=df["date"].min().year+1)
+year = st.slider(label='Année', min_value=df["date"].min().year, max_value=df["date"].max().year,
+                 value=df["date"].min().year + 1)
 
 df = df[["date", "inc100"]]
 start_date = datetime.datetime(year - 1, 9, 1)
 end_date = datetime.datetime(year, 8, 31)
 df = df[(df["date"] >= start_date) & (df["date"] <= end_date)]
 df = df.drop_duplicates(subset="date", keep='first')
-
 
 # interpolate data for everyday
 date_range = pd.date_range(start=df['date'].min(), end=df['date'].max(), freq='D')

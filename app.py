@@ -15,9 +15,9 @@ pg = st.navigation({
 })
 
 st.set_page_config(
-        page_title="Données sentinelles",
-        page_icon=":material/microbiology:",
-        layout="wide",
-    )
+    page_title="Données sentinelles",
+    page_icon=":material/microbiology:",
+    layout="wide",
+)
 
 pg.run()

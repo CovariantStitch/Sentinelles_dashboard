@@ -19,8 +19,10 @@ def split_years(df: pd.DataFrame) -> dict[str, pd.DataFrame]:
 
     return sub_datasets
 
+
 def compute_rmse(x, y):
     return np.sqrt(np.power((x - y), 2).sum() / len(x))
+
 
 def compute_rrmse(x, y):
     return compute_rmse(x, y) / x.mean()

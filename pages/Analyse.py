@@ -8,8 +8,8 @@ import streamlit as st
 
 from common import get_data_from_api, add_double_divider
 from info import path
-from sentinel_api import SentinelClient
 from models.gaussian_fit.gaussian_fits import start_gaussian_fit
+from sentinel_api import SentinelClient
 
 
 def plot_correlations(df):
@@ -48,7 +48,8 @@ def plot_gaussian_fits_PAY(id_pathologie):
         lambda x: (datetime.datetime(2000, 9, 1) + datetime.timedelta(days=x)).timetuple().tm_yday)
     df_fit["mu"] = df_fit["mu"].apply(lambda x: x - 366 if x > 280 else x)
     df_fit["tot"] = df_fit["alpha"] * df_fit["sigma"] * np.sqrt(2 * np.pi)
-    df_fit["d_tot"] = (df_fit["alpha"] + df_fit["d_alpha"]) * (df_fit["sigma"] - df_fit["d_sigma"]) * np.sqrt(2 * np.pi) - \
+    df_fit["d_tot"] = (df_fit["alpha"] + df_fit["d_alpha"]) * (df_fit["sigma"] - df_fit["d_sigma"]) * np.sqrt(
+        2 * np.pi) - \
                       df_fit["tot"]
     labels = {"mu": "Date moyenne du pic épidémique (à partir du 1er janvier)", "geo_name": "Régions",
               "sigma": "Durée moyenne de l'épidémie (jours)", "alpha": "Pic d'incidence (pour 100 000 personnes)",
@@ -74,7 +75,8 @@ def plot_gaussian_fits_RDD(id_pathologie, years1, years2):
     df_fit["year2"] = df_fit["year"].apply(lambda x: int(x[:4]))
     df_fit["tot"] = df_fit["alpha"] * df_fit["sigma"] * np.sqrt(2 * np.pi)
     df_fit_mean = pd.DataFrame(
-        columns=["geo_name", "geo_insee", "alpha", "mu", "sigma", "tot", "d_alpha", "d_mu", "d_sigma", "d_tot", "period"])
+        columns=["geo_name", "geo_insee", "alpha", "mu", "sigma", "tot", "d_alpha", "d_mu", "d_sigma", "d_tot",
+                 "period"])
     for i, years in enumerate([years1, years2]):
         df_fit_ = df_fit[(df_fit["year2"] > years[0]) & (df_fit["year2"] < years[1])]
         for region, df_ in df_fit_.groupby("geo_name"):
@@ -107,7 +109,6 @@ def plot_gaussian_fits_RDD(id_pathologie, years1, years2):
         st.plotly_chart(fig)
 
 
-
 st.sidebar.header("Analyse gaussienne")
 
 add_double_divider("Méthodologie")
@@ -127,7 +128,6 @@ diseases_list_with_regions = client.diseases_list_with_regions
 disease = st.selectbox("Sélectionner une pathologie", diseases_list_with_regions)
 indicators = client.indicators_list
 id_pathologie = indicators[indicators["name"] == disease]["id"].values[0]
-
 
 add_double_divider("Statistiques à l'échelle nationale")
 plot_gaussian_fits_PAY(id_pathologie)
